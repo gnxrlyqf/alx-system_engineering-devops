@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# Displays a clock
+h=0
+m=60
+while ((h < 13 && m < 61))
+do
+	if ((m == 60))
+	then
+		echo "Hour: $h"
+		m=0
+		((h++))
+	else
+		echo $m
+	fi
+	((m++))
+done
