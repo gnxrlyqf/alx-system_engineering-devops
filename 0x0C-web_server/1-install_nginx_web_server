@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
-scp -i ~/.ssh/id_rsa index.html
-ssh ubuntu@54.210.158.196 -i ~/.ssh/id_rsa 'sudo apt update \
-&& sudo apt -y install nginx \
+#configures server
+sudo apt update
+sudo apt install -y nginx
+echo "Hello World!" > /var/www/html/index.html
+service nginx start
