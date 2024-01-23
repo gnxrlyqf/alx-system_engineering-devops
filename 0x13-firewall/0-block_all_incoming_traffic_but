@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 #installs and configures ufw
 sudo apt install ufw -y
+sudo ufw enable
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
 sudo ufw allow 22/tcp
