@@ -18,6 +18,6 @@ if __name__ == "__main__":
                     "completed": task["completed"],
                 }
                 tasks_list.append(dict)
-    all[user.get('id')] = tasks
+        all[user[id]] = tasks
     with open("todo_all_employees.json", "w") as file:
         json.dump(all, file)
