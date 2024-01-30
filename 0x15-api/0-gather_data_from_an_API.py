@@ -11,7 +11,7 @@ if __name__ == "__main__":
     total = []
     completed = []
     for task in tasks:
-        if task.get("userId") == int(argv[1]):
+        if task["userId"] == int(argv[1]):
             total.append(task["title"])
             if task.get("completed"):
                 completed.append(task["title"])

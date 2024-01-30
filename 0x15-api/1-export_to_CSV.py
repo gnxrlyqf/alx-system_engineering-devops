@@ -12,6 +12,6 @@ if __name__ == "__main__":
     with open(argv[1] + '.csv', 'w') as file:
         writer = csv.writer(file, quoting=csv.QUOTE_ALL)
         for task in tasks:
-            if task.get('userId') == int(argv[1]):
+            if task["userId"] == int(argv[1]):
                 row = [argv[1], name, str(task["completed"]), task["title"]]
                 writer.writerow(row)

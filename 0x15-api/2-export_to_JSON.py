@@ -12,7 +12,7 @@ if __name__ == "__main__":
     tasks_list = []
     users_tasks = {}
     for task in tasks:
-        if task.get("userId") == int(argv[1]):
+        if task["userId"] == int(argv[1]):
             dict = {
                 "task": task["title"],
                 "completed": task["completed"],
