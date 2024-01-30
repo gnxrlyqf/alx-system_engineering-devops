@@ -16,6 +16,6 @@ if __name__ == "__main__":
             if task.get('completed'):
                 completed.append(task["title"])
     string = "Employee {} is done with tasks({}/{}):"
-    print(string.format(name, len(completed), len(total)))  
+    print(string.format(name, len(completed), len(total)))
     for task in completed:
         print("\t {}".format(task))
