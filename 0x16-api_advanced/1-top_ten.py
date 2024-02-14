@@ -4,6 +4,7 @@ from requests import get
 
 
 def top_ten(subreddit):
+    """prints top ten posts"""
     user = {"User-Agent": "My-User-Agent"}
     url = "https://www.reddit.com/r/{}/about.json".format(subreddit)
     with get(url, headers=user, allow_redirects=False) as page:

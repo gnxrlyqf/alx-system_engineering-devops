@@ -4,6 +4,7 @@ from requests import get
 
 
 def number_of_subscribers(subreddit):
+    """returns subscriber count of a subreddit"""
     user = {"User-Agent": "My-User-Agent"}
     url = "https://www.reddit.com/r/{}/about.json".format(subreddit)
     with get(url, headers=user, allow_redirects=False) as page:
