@@ -1,5 +1,5 @@
 #fix user limit
-exec { 'fix--for-nginx':
+exec { 'nginx fix':
   command => 'sed -i "s/15/4096/" /etc/default/nginx',
   path    => '/usr/local/bin/:/bin/'
 }
